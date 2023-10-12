@@ -1,0 +1,31 @@
+package com.techbyfloig.cubannotary.android.network.models.response.shippingtime
+
+data class EmsResponse(
+    val billType: String,
+    val destinationCityName: String,
+    val destinationCountryCode: String,
+    val destinationCountryName: String,
+    val destinationPostalCode: String,
+    val destinationPostalCodeHigh: String,
+    val destinationPostalCodeLow: String,
+    val destinationStateProvince: String,
+    val dutyType: String,
+    val guaranteeSuspended: Boolean,
+    val numberOfServices: Int,
+    val originCityName: String,
+    val originCountryCode: String,
+    val originCountryName: String,
+    val originPostalCode: String,
+    val originPostalCodeHigh: String,
+    val originPostalCodeLow: String,
+    val originStateProvince: String,
+    val residentialIndicator: String,
+    val serviceLevel: String,
+    val services: List<Service>,
+    val shipDate: String,
+    val shipTime: String,
+    val shipmentContentsCurrencyCode: String,
+    val shipmentContentsValue: String,
+    val weight: String,
+    val weightUnitOfMeasure: String
+)
